@@ -13,7 +13,7 @@ inspired by `bryanthaboi/gen1recomp`.
 │   └── src/thunder_core.c         # Zero-dependency execution engine and scanline rasterizer
 ├── platforms/
 │   ├── sdl2/main.c                # Desktop (Win10/11, Linux, BSD, macOS, Haiku) & mobile frontend
-│   ├── web/index.html             # Universal offline HTML5/Canvas player (touch/keyboard/gamepad)
+
 │   ├── devkitpro/Makefile         # Switch, 3DS, Wii, NDS (devkitA64, devkitARM, devkitPPC)
 │   ├── playstation/Makefile       # PS Vita (VitaSDK), PSP (pspdev), PS2 (ps2dev), PS1
 │   ├── dreamcast/Makefile         # Sega Dreamcast (KallistiOS)
@@ -38,7 +38,6 @@ The ROM and generated `userdata/` remain git-ignored to comply with repository r
 - Mapper 163 Support: Full register banking (`$5000`–`$53FF`) and Waixing/Nanjing protection registers (`$5101`, `$5501`).
 - Unified Input Mapping: `config/input_map.json` routes physical controllers (XInput/DirectInput/SDL), keyboard, and on-screen multi-touch buttons across all supported architectures.
 - Mod Engine: Supports hot-applying IPS binary patches and JSON-specified byte injections into output ROM images.
-- Offline HTML5 Web Player: Instant cross-platform fallback playable in any modern web browser or mobile phone browser without compilation.
 
 ## CLI & Launcher Commands
 ```bash
