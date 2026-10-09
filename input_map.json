@@ -1,0 +1,32 @@
+{
+  "pc": {
+    "up": ["Key:W", "Key:Up", "Pad:DPadUp", "Pad:LStickUp"],
+    "down": ["Key:S", "Key:Down", "Pad:DPadDown", "Pad:LStickDown"],
+    "left": ["Key:A", "Key:Left", "Pad:DPadLeft", "Pad:LStickLeft"],
+    "right": ["Key:D", "Key:Right", "Pad:DPadRight", "Pad:LStickRight"],
+    "a": ["Key:K", "Key:X", "Pad:South"],
+    "b": ["Key:J", "Key:Z", "Pad:East"],
+    "start": ["Key:Enter", "Pad:Start"],
+    "select": ["Key:RShift", "Key:Backspace", "Pad:Back"]
+  },
+  "mobile": {
+    "up": ["Touch:dpad.up", "Pad:DPadUp"],
+    "down": ["Touch:dpad.down", "Pad:DPadDown"],
+    "left": ["Touch:dpad.left", "Pad:DPadLeft"],
+    "right": ["Touch:dpad.right", "Pad:DPadRight"],
+    "a": ["Touch:button.a", "Pad:South"],
+    "b": ["Touch:button.b", "Pad:East"],
+    "start": ["Touch:button.start", "Pad:Start"],
+    "select": ["Touch:button.select", "Pad:Back"]
+  },
+  "console": {
+    "up": ["Pad:DPadUp", "Pad:LStickUp"],
+    "down": ["Pad:DPadDown", "Pad:LStickDown"],
+    "left": ["Pad:DPadLeft", "Pad:LStickLeft"],
+    "right": ["Pad:DPadRight", "Pad:LStickRight"],
+    "a": ["Pad:South"],
+    "b": ["Pad:East"],
+    "start": ["Pad:Start"],
+    "select": ["Pad:Back"]
+  }
+}

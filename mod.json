@@ -1,0 +1,7 @@
+{
+  "id": "example_palette",
+  "version": "1.0",
+  "description": "Template mod: raw byte patch (file offsets). Edit 'patches' or add IPS files under 'ips'.",
+  "ips": [],
+  "patches": []
+}

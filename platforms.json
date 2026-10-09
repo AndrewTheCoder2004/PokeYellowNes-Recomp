@@ -1,0 +1,42 @@
+{
+  "_tiers": {
+    "A": "Public SDK/toolchain exists; full-speed NES core + SDL-style backend is realistic.",
+    "B": "Public toolchain exists but hardware is very constrained (RAM/CPU/ROM size); needs a reduced port, not the shared core.",
+    "C": "No public/legal SDK (or dead platform); needs unofficial SDKs or is not realistically supportable."
+  },
+  "platforms": [
+    {"name":"Windows 10 x86","tier":"A","input":"keyboard+pad","backend":"SDL2 / MinGW-w64 i686"},
+    {"name":"Windows 11 x64","tier":"A","input":"keyboard+pad","backend":"SDL2 / MinGW-w64 x86_64"},
+    {"name":"Linux","tier":"A","input":"keyboard+pad","backend":"SDL2 / gcc"},
+    {"name":"BSD","tier":"A","input":"keyboard+pad","backend":"SDL2 / clang"},
+    {"name":"macOS","tier":"A","input":"keyboard+pad","backend":"SDL2 / Xcode clang"},
+    {"name":"iOS","tier":"A","input":"touch+pad","backend":"SDL2 / Xcode (needs signing)"},
+    {"name":"Windows Phone","tier":"C","input":"touch","backend":"UWP/WinRT (platform discontinued)"},
+    {"name":"Android","tier":"A","input":"touch+pad","backend":"SDL2 / NDK"},
+    {"name":"HaikuOS","tier":"A","input":"keyboard+pad","backend":"SDL2 / Haiku gcc"},
+    {"name":"ArcaOS","tier":"B","input":"keyboard","backend":"SDL2 for OS/2 / Open Watcom or gcc"},
+    {"name":"Wii","tier":"A","input":"pad","backend":"devkitPPC / libogc"},
+    {"name":"Xbox 360","tier":"C","input":"pad","backend":"libxenon (needs modded console)"},
+    {"name":"PS3","tier":"B","input":"pad","backend":"PSL1GHT (needs CFW)"},
+    {"name":"3DS","tier":"A","input":"pad+touch","backend":"devkitARM / libctru"},
+    {"name":"PS Vita","tier":"A","input":"pad+touch","backend":"VitaSDK"},
+    {"name":"SNES","tier":"B","input":"pad","backend":"65816 / PVSnesLib - NES core cannot run; reduced port only"},
+    {"name":"N64","tier":"B","input":"pad","backend":"libdragon"},
+    {"name":"Switch","tier":"A","input":"pad+touch","backend":"devkitA64 / libnx"},
+    {"name":"Nintendo DSi","tier":"A","input":"pad+touch","backend":"devkitARM / libnds"},
+    {"name":"GBA","tier":"B","input":"pad","backend":"devkitARM / libgba - 2MB PRG needs flashcart/bank streaming"},
+    {"name":"PS1","tier":"B","input":"pad","backend":"PSn00bSDK"},
+    {"name":"PS2","tier":"A","input":"pad","backend":"ps2dev / SDL2"},
+    {"name":"PSP","tier":"A","input":"pad","backend":"pspdev"},
+    {"name":"PS4","tier":"C","input":"pad","backend":"no public SDK (unofficial jailbreak SDKs only)"},
+    {"name":"PS5","tier":"C","input":"pad","backend":"no public SDK"},
+    {"name":"Xbox (original)","tier":"B","input":"pad","backend":"nxdk"},
+    {"name":"Genesis","tier":"B","input":"pad","backend":"SGDK (68000) - reduced port only"},
+    {"name":"Sega CD","tier":"B","input":"pad","backend":"SGDK + CD"},
+    {"name":"32X","tier":"B","input":"pad","backend":"libdragon-32x / SH-2"},
+    {"name":"Saturn","tier":"B","input":"pad","backend":"Jo Engine / SaturnRingLib"},
+    {"name":"Dreamcast","tier":"A","input":"pad","backend":"KallistiOS"},
+    {"name":"Symbian","tier":"C","input":"keyboard+touch","backend":"Symbian S60 / Open C (obsolete)"},
+    {"name":"J2ME","tier":"B","input":"keypad","backend":"CLDC/MIDP - 2MB ROM exceeds typical heap; streaming required"}
+  ]
+}
